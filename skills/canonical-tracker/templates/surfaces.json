@@ -1,0 +1,38 @@
+{
+  "canonical": "TRACKER.md",
+  "figures": {
+    "progress": "Launch progress",
+    "blockers": "Blockers (A)",
+    "next": "Next tier (B)",
+    "all": "All items"
+  },
+  "count_glyphs": ["✅", "🟡", "⬜", "⏸️", "❌"],
+  "key_regex": "[A-Z]+\\d+",
+  "check_closed_index": true,
+  "surfaces": [
+    {
+      "file": "dashboard.html",
+      "needles": [
+        "<div class=\"big\">{progress.pct}%</div>",
+        "<b>{progress.done} of {progress.total} items done.</b>",
+        "<b>Blockers</b><span>{blockers.done}/{blockers.total} · {blockers.pct}%</span>",
+        "<b>Next</b><span>{next.done}/{next.total} · {next.pct}%</span>",
+        "<div class=\"tile total\"><div class=\"n\">{counts.total}</div>",
+        "<div class=\"tile done\"><div class=\"n\">{counts.done}</div>",
+        "<div class=\"tile open\"><div class=\"n\">{counts.open}</div>"
+      ],
+      "open_keys_within": 90000,
+      "balanced_tags": ["div", "details"],
+      "summary_regex": "<span class=\"v\">(.*?)</span></li>",
+      "summary_max": 220,
+      "deprioritized_keys": ["X1"],
+      "deprioritized_heading": "Deprioritized"
+    },
+    {
+      "file": "STATUS.md",
+      "needles": [
+        "**{progress.pct}%** — {progress.done} of {progress.total}"
+      ]
+    }
+  ]
+}
