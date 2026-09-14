@@ -120,5 +120,5 @@ examples/
 
 ## License
 
-MIT. The rules are the useful part; the scripts are small enough to rewrite for your own
+CC0 1.0 Universal (public domain dedication). The rules are the useful part; the scripts are small enough to rewrite for your own
 surfaces in an afternoon, and probably should be.
