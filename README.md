@@ -120,5 +120,5 @@ examples/
 
 ## License
 
-CC0 1.0 Universal (public domain dedication). The rules are the useful part; the scripts are small enough to rewrite for your own
-surfaces in an afternoon, and probably should be.
+CC0 1.0 Universal (public domain dedication). The rules are the useful part; the scripts are small, and rewriting them for your
+own surfaces is probably the right move.
