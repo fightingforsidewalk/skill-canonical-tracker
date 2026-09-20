@@ -2,13 +2,26 @@
 
 **One record, many glance surfaces, and a check that proves they agree.**
 
+*Want it in your own project? Paste [`ADOPT.md`](ADOPT.md) into a Claude that can see the
+project and it sets itself up.*
+
 A Claude skill for any chat that maintains a project tracker or status dashboard. Plain
 Markdown record, script-only edits, honest arithmetic, and a small sync check that reads the
 record as truth and fails loudly when any derived surface disagrees.
 
-Companion to the **claude-relay** repo — the mailbox and operating model for
-running one project across several chats. This repo is the third leg: how the record stays
-true.
+## How this fits with the other two
+
+Three repositories, same work, different job:
+
+- **Coordination** — [claude-relay](https://github.com/fightingforsidewalk/skill-claude-relay): how several chats on one project reach each
+  other without you carrying the messages between them.
+- **The record** — [canonical-tracker](https://github.com/fightingforsidewalk/skill-canonical-tracker): one record as the truth, every derived
+  view patched from it, and a check that fails when they disagree.
+- **Execution** — [claude-code-discipline](https://github.com/fightingforsidewalk/claude-code-discipline): how a coding agent works on its own and
+  reports back in a form you can check without reading the diff.
+
+This repo is the record one. Each works on its own; together they cover a project from
+the first instruction to the last commit.
 
 ---
 
